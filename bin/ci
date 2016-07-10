@@ -3,5 +3,10 @@
 set -e
 
 bin/rspec spec
+
+if [ "$CI" ]; then
+  change-phantomjs-version 2.1.1
+fi
+
 bin/rake jasmine:ci
 bin/quality
