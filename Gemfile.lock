@@ -108,6 +108,11 @@ GEM
       json
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
+    delayed_job (4.1.2)
+      activesupport (>= 3.0, < 5.1)
+    delayed_job_active_record (4.1.1)
+      activerecord (>= 3.0, < 5.1)
+      delayed_job (>= 3.0, < 5)
     diff-lcs (1.2.5)
     docile (1.1.5)
     erubis (2.7.0)
@@ -209,6 +214,10 @@ GEM
     slim (3.0.7)
       temple (~> 0.7.6)
       tilt (>= 1.3.3, < 2.1)
+    slim-rails (3.1.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+      slim (~> 3.0)
     slim_lint (0.8.1)
       rake (>= 10, < 12)
       rubocop (>= 0.36.0)
@@ -251,6 +260,7 @@ DEPENDENCIES
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
   coffeelint
+  delayed_job_active_record
   foreman
   jasmine
   jbuilder (~> 2.0)
@@ -266,6 +276,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   scss_lint
   sdoc (~> 0.4.0)
+  slim-rails
   slim_lint
   spring
   turbolinks
