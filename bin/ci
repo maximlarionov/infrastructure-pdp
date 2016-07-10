@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+system "bundle exec rake test"
+puts "Test suite run finished"
