@@ -1,4 +1,7 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env sh
 
-system "bundle exec rake test"
-puts "Test suite run finished"
+set -e
+
+bin/rspec spec
+bin/rake jasmine:ci
+bin/quality
