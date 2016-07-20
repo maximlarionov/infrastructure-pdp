@@ -14,6 +14,7 @@ gem "sdoc", "~> 0.4.0", group: :doc
 gem "foreman"
 gem "decent_exposure", "3.0.0"
 gem "devise"
+gem 'simple_form'
 
 group :development, :test do
   gem "byebug"
@@ -26,6 +27,9 @@ group :development, :test do
   gem "jasmine"
   gem "coffeelint"
   gem "faker"
+  gem "factory_girl"
+  gem "dotenv-rails"
+  gem "letter_opener"
 
   %w(rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support).each do |lib|
     gem lib, git: "https://github.com/rspec/#{lib}.git", branch: "master"
