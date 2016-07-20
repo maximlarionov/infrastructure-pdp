@@ -12,6 +12,7 @@ gem "turbolinks"
 gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 gem "foreman"
+gem "decent_exposure", "3.0.0"
 
 group :development, :test do
   gem "byebug"
@@ -23,6 +24,7 @@ group :development, :test do
   gem "codeclimate-test-reporter", require: nil
   gem "jasmine"
   gem "coffeelint"
+  gem "faker"
 
   %w(rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support).each do |lib|
     gem lib, git: "https://github.com/rspec/#{lib}.git", branch: "master"
