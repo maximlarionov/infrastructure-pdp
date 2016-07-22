@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :feedback do
-    email
-    name { Faker::Name.name }
-    message { Faker::Lorem.paragraph }
-    phone { Faker::PhoneNumber.phone_number }
+    sequence(:email) { Faker::Internet.email }
+    sequence(:name) { Faker::Name.name }
+    sequence(:message) { Faker::Lorem.paragraph }
+    sequence(:phone) { Faker::PhoneNumber.phone_number }
   end
 end

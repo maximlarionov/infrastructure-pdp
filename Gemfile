@@ -26,14 +26,20 @@ group :development, :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'jasmine'
   gem 'coffeelint'
-  gem 'faker'
-  gem 'factory_girl'
   gem 'dotenv-rails'
-  gem 'letter_opener'
 
   %w(rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support).each do |lib|
     gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'master'
   end
+end
+
+group :test do
+  gem 'faker'
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'letter_opener'
+  gem 'capybara'
+  gem 'formulaic'
+  gem 'email_spec'
 end
 
 group :development do
