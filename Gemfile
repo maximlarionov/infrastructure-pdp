@@ -35,7 +35,7 @@ end
 
 group :test do
   gem 'faker'
-  gem "factory_girl_rails", "~> 4.0"
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'letter_opener'
   gem 'capybara'
   gem 'formulaic'
