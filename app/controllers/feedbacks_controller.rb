@@ -8,7 +8,6 @@ class FeedbacksController < ApplicationController
 
   def create
     ApplicationMailer.feedback(feedback).deliver_now! if feedback.save
-    flash[:notice] = "Email was successfully sent."
     respond_with(feedback, location: root_path)
   end
 

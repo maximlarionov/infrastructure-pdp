@@ -15,6 +15,7 @@ gem 'foreman'
 gem 'decent_exposure', '3.0.0'
 gem 'devise'
 gem 'simple_form'
+gem 'responders'
 
 group :development, :test do
   gem 'byebug'

@@ -327,6 +327,7 @@ DEPENDENCIES
   letter_opener
   pg
   rails (= 4.2.6)
+  responders
   rspec-core!
   rspec-expectations!
   rspec-mocks!
